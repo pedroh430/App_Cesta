@@ -1,0 +1,29 @@
+.tabbar{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(163, 140, 184);
+    align-items: center;
+    border-radius: 10px;
+    .tab
+}
+
+.tab{
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: none;
+    font-size: 16px;
+
+}
+
+.tab-content{
+    display: none;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.tab-content.active{
+    display: block;
+}
