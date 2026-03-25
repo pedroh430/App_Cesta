@@ -12,3 +12,14 @@ tabs.forEach(tab => {
         document.getElementById(target).classList.add("active");
     })
 })
+
+const startScreen = document.getElementById("start-screen");
+const app = document.getElementById("app");
+const enterBtn = document.getElementById("enter-btn");
+
+enterBtn.addEventListener("click", () => {
+  startScreen.classList.remove("active");
+  app.classList.add("active");
+});
+
+

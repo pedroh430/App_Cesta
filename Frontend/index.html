@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/TelaInicial.css">
     <title></title>
 </head>
 <body>
-    <div id="home" class="tab-content activate">
-        <h1>Home</h1>
+    <div id="start-screen" class="screen active">
+        <img class="Logo" src="image/Logo Design for Boxify.png" alt="">
+        <h1>cestar app</h1>
+        <button id="enter-btn">entrar</button>
+
     </div>
 
-     <div id="cart" class="tab-content ">
+   <div id="app" class="screen">
+     <div id="home" class="tab-content activate">
+        <h1>Home</h1>
+     </div>
+
+      <div id="cart" class="tab-content ">
         <h1>cart</h1>
-    </div>
+     </div>
 
      <div id="add item" class="tab-content ">
         <h1>add item</h1>
-    </div>
+     </div>
 
-    <div class="tabbar">
+     <div class="tabbar">
         <button class="tab activate" data-tab="home">Home</button>
         <button class="tab" data-tab="cart">Carrinho</button>
         <button class="tab" data-tab="add item">adconar </button>
-    </div>
-    <script src="js/main.js"></script>
-    
+     </div>
+     <script src="js/main.js"></script>
+   </div> 
 </body>
 </html>
