@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/TelaInicial.css">
+   
     <title></title>
 </head>
 <body>
     <div id="start-screen" class="screen active">
-        <img class="Logo" src="image/Logo Design for Boxify.png" alt="">
-        <h1>cestar app</h1>
-        <button id="enter-btn">entrar</button>
+        <img id="logo" src="image/Logo Design for Boxify.png" alt="">
+        <h1>Bem-vindo ao App!</h1>
+        <button id="enter-btn">Iniciar</button>
+        <h2 id="subtitulo">"Organize, personalize e monte cestas com facilidade."</h2>
 
     </div>
 
    <div id="app" class="screen">
-     <div id="home" class="tab-content activate">
-        <h1>Home</h1>
+     
+    <div id="home" class="tab-content activate">
+        <div id="items">
+            <div class="card">
+                <img src="" alt="">
+                <div class="info">
+                    <p class="nome">Porduct name</p>
+                    <p class="descricap">description</p>
+                    <div class="foster">
+                        <span class="price">777</span>
+                        <button onclick="addtocard">add</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
      </div>
 
       <div id="cart" class="tab-content ">
@@ -29,9 +45,9 @@
      </div>
 
      <div class="tabbar">
-        <button class="tab activate" data-tab="home">Home</button>
-        <button class="tab" data-tab="cart">Carrinho</button>
-        <button class="tab" data-tab="add item">adconar </button>
+        <button id="button1" onclick="activate()" class="tab activate" data-tab="home">Home</button>
+        <button id="button2" onclick="activate()" class="tab" data-tab="cart">Carrinho</button>
+        <button id="button3" onclick="activate()" class="tab" data-tab="add item">adconar </button>
      </div>
      <script src="js/main.js"></script>
    </div> 
