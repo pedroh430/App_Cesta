@@ -22,10 +22,5 @@ enterBtn.addEventListener("click", () => {
   app.classList.add("active");
 });
 
-//function for ativate the tabs
-function activate(){
-    const btn = document.getElementById("button1");
-    btn.classList.add("active");
-}
 
 
